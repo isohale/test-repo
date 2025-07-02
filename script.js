@@ -9,4 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Change the content of the message paragraph
     message.textContent = "You clicked the button!";
   });
+
+  function setup() {
+  createCanvas(100, 100);
+
+  background(200);
+
+  ellipse(50, 50, 80, 80);
+
+  describe('A white circle on a gray canvas.');
+}
 });
