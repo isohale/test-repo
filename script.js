@@ -4,7 +4,8 @@ const sketch1 = new p5((p) => {
   p.setup = function() {
     // prepare a 2-D canvas
     // the variables define the x and y axes of the canvas
-    p.createCanvas(640, 480, p.P2D, 'canvas-container-1');   
+    let canvas = p.createCanvas(640, 480);
+    canvas.parent('canvas-container-1');
   };
 
   // The draw code section runs 60 frames per second 

@@ -5,7 +5,8 @@ const sketch2 = new p5((p) => {
   let yPositions = [150, 250, 350, 450];
 
   p.setup = function() {
-    p.createCanvas(640, 480, p.P2D, 'canvas-container-2');
+    let canvas = p.createCanvas(640, 480);
+    canvas.parent('canvas-container-2');
   };
 
   p.draw = function() {
