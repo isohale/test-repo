@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minimalist Demo</title>
+  <title>Dual P5.js Canvases</title>
   <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="style.css" />
   <!-- Add p5.js library -->
@@ -11,18 +11,21 @@
 </head>
 <body>
   <!-- Page heading -->
-  <h1>Hello, Web!</h1>
+  <h1>Dual P5.js Canvases</h1>
 
   <!-- Description paragraph -->
-  <p>This is a basic demonstration of how HTML, CSS, and JavaScript work together.</p>
+  <p>This page demonstrates two separate p5.js sketches running independently.</p>
 
-  <!-- Canvas container for p5.js -->
-  <div id="canvas-container"></div>
+  <!-- Canvas container for first p5.js sketch (script.js) -->
+  <div id="canvas-container-1"></div>
+  
+  <!-- Canvas container for second p5.js sketch (2d-spatial-canvas.js) -->
+  <div id="canvas-container-2"></div>
 
   <!-- Empty paragraph to display JavaScript message -->
   <p id="message"></p>
 
-  <!-- Link to external JavaScript file -->
+  <!-- Link to external JavaScript files -->
   <script src="script.js"></script>
   <script src="2d-spatial-canvas.js"></script>
 </body>

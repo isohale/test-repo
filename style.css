@@ -19,6 +19,15 @@ p {
   margin: 10px 0;
 }
 
+/* Style for canvas containers */
+#canvas-container-1, #canvas-container-2 {
+  display: inline-block;
+  margin: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
 /* Style for the button */
 button {
   background-color: #000000; /* black button */
