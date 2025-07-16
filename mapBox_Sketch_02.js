@@ -24,7 +24,7 @@ var mapboxSketch02 = function() {
   // STEP 1: SET UP YOUR MAPBOX ACCESS TOKEN
   // ============================================================================
   // Using the same token as the first example for consistency
-  mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXNhbiIsImEiOiJjbWF6eGs0djAwb3J0MmtvczMwemV5cjI1In0.h_4Nyov8PkJ_dRcebqkQfA';
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZmxvd25qb2UiLCJhIjoiY21kNjh1dHI3MDcweDJ0b2xyZG51dnNmdCJ9.x7wx211BFwCJ6SsGUYcfOQ';
 
   // ============================================================================
   // STEP 2: CREATE THE MAP OBJECT

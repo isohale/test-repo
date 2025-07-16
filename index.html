@@ -35,6 +35,8 @@
 
   <!-- Load Mapbox GL JS library -->
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>  
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <!-- ------------------------------------------------------------ -->
   
   <meta charset="UTF-8">
@@ -227,8 +229,11 @@
     <!-- Canvas container for mapbox visualization (mapBox_Sketch_01.js) -->
     <div id="mapbox-container-1"></div>
 
-
-    
+    <div class="controls">
+      <button id="zoomIn">Zoom In</button>
+      <button id="zoomOut">Zoom Out</button>
+      <button id="resetView">Reset View</button>
+  </div>    
 
 
 
