@@ -156,3 +156,70 @@ button:hover {
 #threejs-container-3 {
   margin-bottom: 60px;                /* Extra space after the last canvas */
 }
+
+
+/* Style for D3.js canvas containers to add spacing between them */
+#d3-container-1,
+#d3-container-2,
+#d3-container-3 {
+  margin-bottom: 40px;                /* Add 40 pixels of space below each canvas */
+  border: 1px solid #eee;             /* Add a subtle border around each canvas */
+  border-radius: 4px;                 /* Add slightly rounded corners */
+  overflow: hidden;                   /* Ensure canvas content doesn't overflow the border */
+  position: relative;                 /* For tooltip positioning */
+}
+
+/* Add extra spacing after the last canvas container */
+#d3-container-3 {
+  margin-bottom: 60px;                /* Extra space after the last canvas */
+}
+
+/* Style for D3.js tooltips */
+.tooltip {
+  z-index: 1000;                      /* Ensure tooltip appears above other elements */
+}
+
+/* Style for important notes and CSV modification sections */
+.important-note,
+.csv-modification {
+  background-color: #f8f9fa;          /* Light gray background */
+  border-left: 4px solid #007bff;     /* Blue left border for emphasis */
+  padding: 16px;                      /* Internal spacing */
+  margin: 20px 0;                     /* External spacing */
+  border-radius: 4px;                 /* Rounded corners */
+}
+
+.important-note {
+  border-left-color: #dc3545;         /* Red border for important notes */
+  background-color: #fff5f5;          /* Light red background */
+}
+
+.csv-modification {
+  border-left-color: #28a745;         /* Green border for CSV modification info */
+  background-color: #f8fff9;          /* Light green background */
+}
+
+.important-note strong,
+.csv-modification strong {
+  color: #333;                        /* Dark text for emphasis */
+}
+
+.important-note ol,
+.csv-modification ul {
+  margin: 12px 0;                     /* Spacing for lists */
+  padding-left: 20px;                 /* Indent lists */
+}
+
+.important-note li,
+.csv-modification li {
+  margin-bottom: 8px;                 /* Space between list items */
+  line-height: 1.5;                   /* Line height for readability */
+}
+
+.csv-modification code {
+  background-color: #e9ecef;          /* Light gray background for code */
+  padding: 2px 6px;                   /* Small padding around code */
+  border-radius: 3px;                 /* Rounded corners for code */
+  font-family: 'Courier New', monospace; /* Monospace font for code */
+  font-size: 14px;                    /* Slightly smaller font for code */
+}

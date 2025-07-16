@@ -9,6 +9,12 @@
 
 
   <!-- ------------------------------------------------------------ -->
+  <!-- Load D3.js library from CDN -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- This loads the D3.js library which provides functions for creating data visualizations -->
+  <!-- ------------------------------------------------------------ -->
+
+  <!-- ------------------------------------------------------------ -->
   <!-- Load p5.js library from CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
   <!-- This loads the p5.js library which provides functions for creating graphics and animations -->
@@ -136,7 +142,23 @@
     
     <!-- Canvas container for third three.js sketch (atmospheric-geometry.js) --> 
     <div id="threejs-container-3"></div>
-    <!-- ------------------------------------------------------------ -->
+
+     <div class="section-title">Digital Object 2: Temporal Structures</div>
+    <!-- Section heading for the D3.js data visualization demonstration -->
+    
+    <p>This section explores temporal data visualization using D3.js, demonstrating how to create interactive timelines and event-based visualizations that help understand temporal patterns and relationships in data.</p>
+    <!-- Introduction to the first section -->
+
+      <!-- Section for Calendar Visualization -->
+    <div class="section-title">Calendar Heatmap: Daily Data Visualization</div>
+    <p>A calendar heatmap visualization inspired by GitHub's contribution graph, demonstrating how to create a year-view calendar with daily data points. This example shows how to use D3.js to create a grid-based layout where each cell represents a day, with color intensity indicating data values.</p>
+        
+    <!-- Canvas container for calendar visualization (calendar-heatmap.js) -->
+    <div id="d3-container-1"></div>
+
+     <!-- ------------------------------------------------------------ -->
+
+  <!-- ------------------------------------------------------------ -->
     
   </main>
   <!-- End of main content area -->
@@ -157,6 +179,11 @@
   <script src="3d-primitive.js"></script>
   <script src="orbit-camera.js"></script>
   <script src="atmospheric-geometry.js"></script>
+
+
+  <!-- LOAD EACH NEW D3.JS SCRIPT HERE -->
+
+  <script src="calendar-heatmap.js"></script>
 
   <!-- ------------------------------------------------------------ -->
 
