@@ -19,17 +19,21 @@ document.addEventListener('DOMContentLoaded', function() {
   // 4. Replace the values below with your actual Firebase config
   
   const firebaseConfig = {
-    // Your Firebase project configuration goes here
-    // For this tutorial, we'll use a demo configuration
-    // In a real app, you would replace these with your actual Firebase project settings
-    apiKey: "AIzaSyA43OAjaMC7Rl6PTQXEUChdcSdBrg_drbA",
-    authDomain: "my-first-app-7b16f.firebaseapp.com",
-    projectId: "my-first-app-7b16f",
-    storageBucket: "my-first-app-7b16f.firebasestorage.app",
-    messagingSenderId: "784859944037",
-    appId: "1:784859944037:web:7a08355dec0760860a228c",
-    measurementId: "G-TJRJWDJ13P"
+
+    apiKey: "AIzaSyCctZi1ToUkjMl92jgSX65MBdDAwqZjvSk",
+  
+    authDomain: "cdw-poll.firebaseapp.com",
+  
+    projectId: "cdw-poll",
+  
+    storageBucket: "cdw-poll.firebasestorage.app",
+  
+    messagingSenderId: "886921388457",
+  
+    appId: "1:886921388457:web:548af1973e3bc6bcb4e4b8"
+  
   };
+
 
   // Initialize Firebase - this connects your app to Firebase services
   // firebase.initializeApp() sets up the connection using your configuration
