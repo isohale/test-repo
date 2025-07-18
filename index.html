@@ -38,6 +38,13 @@
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- ------------------------------------------------------------ -->
+
+  <!-- Load Firebase SDK from CDN -->
+  <!-- Firebase is Google's backend-as-a-service platform that provides real-time database, authentication, and hosting -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+  <!-- These scripts load Firebase libraries for app initialization and real-time database functionality -->
+  <!-- ------------------------------------------------------------ -->
   
   <meta charset="UTF-8">
   <!-- This sets the character encoding to UTF-8, which supports special characters and emojis -->
@@ -239,12 +246,12 @@
     <!-- ------------------------------------------------------------ -->
     <!-- ------------------------------------------------------------ -->
     <!-- ------------------------------------------------------------ -->
-    <!-- ENGAGEMENT COMPONENTS IN FIREBASE -->
+    <!-- ENGAGEMENT COMPONENTS (with Firebase)-->
 
     <div class="section-title digital-object-title">Digital Object 5: Engagement Components</div>
     <!-- Section heading for the Engagement Components demonstration -->
     
-    <p>This section explores user interfaces and engagement widgets using Firebase, demonstrating how to work buttons, sliders, and implement a public poll.</p>
+    <p>This section explores user interfaces demonstrating how to work buttons, sliders, dropdown menus. You can also implement a public poll using Firebase.</p>
     <!-- Introduction to the first section -->
 
     <!-- Section for Buttons -->
@@ -372,13 +379,49 @@
 <div class="section-title">Interactive Output Display</div>
 <p>A simple output display for the elements above</p>
   <div id="interactive-output-display">
-    <h3>Current Values:</h3>
+    <h4>Current Values:</h4>
     <div id="values-display">
       <p>Interact with the elements above to see their values here.</p>
     </div>
 </div>
 
+<!-- ------------------------------------------------------------ -->
 
+<!-- Poll Section -->
+<div class="section-title">Simple Poll with Firebase</div>
+<p>Click a button to vote.</p>
+<p> The results update in real-time thanks to Firebase!</p>
+
+<div class="poll-container">
+  <!-- Poll question -->
+  <div class="poll-question">
+    <h3>Do you like this class?</h3>
+  </div>
+  
+  <!-- Vote buttons -->
+  <div class="vote-buttons">
+    <button class="vote-btn vote-yes" id="vote-yes">
+      <span class="vote-text">Yes</span>
+      <span class="vote-count" id="yes-count">0</span>
+    </button>
+    
+    <button class="vote-btn vote-no" id="vote-no">
+      <span class="vote-text">No</span>
+      <span class="vote-count" id="no-count">0</span>
+    </button>
+  </div>
+  
+  <!-- Total votes display -->
+  <div class="total-votes">
+    <p>Total votes: <span id="total-votes">0</span></p>
+  </div>
+</div>
+
+<!-- Status Display -->
+<div class="section-title">Connection Status</div>
+<div id="connection-status" class="status-display">
+  <p>Connecting to Firebase...</p>
+</div>
 
 
 
@@ -419,6 +462,7 @@
   <script src="checkboxes-radioButtons.js"></script>
   <script src="dropdowns.js"></script>
   <script src="interactive-output-display.js"></script>
+  <script src="firebase-poll.js"></script>
 
 
   <!-- ------------------------------------------------------------ -->
